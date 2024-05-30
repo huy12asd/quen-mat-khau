@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="login">
+        <form id="forgotPasswordForm">
+            <h1>Quên mật khẩu</h1>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Gửi yêu cầu</button>
+        </form>
+    </section>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: purple;
+            font-family: Arial, sans-serif;
+        }
+
+        section.login {
+            background: url('hoicham.jpg') no-repeat;
+            width: 600px;
+            height: 576px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8); /* Màu nền mờ */
+            box-sizing: border-box;
+            width: 80%; /* Chiều rộng form */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            transition: border-bottom-color 0.3s;
+        }
+
+        input:focus {
+            border-bottom-color: #e0c445;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            border: none;
+            background: #333;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background: #e0c445;
+            color: #333;
+        }
+    </style>
+</body>
+</html>
